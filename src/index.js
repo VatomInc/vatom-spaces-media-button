@@ -24,8 +24,8 @@ export default class MediaButtonPlugin extends BasePlugin {
             settings: obj => [
                 { id: 'info', type: 'label', value: 'Settings' },
                 { id: 'select-name', name: 'Select Via Name', type: 'checkbox', help: 'Allows for selection of media player via its name rather than ID.'},
-                this.getComponentField(obj, 'media-button', 'select-name') == true ? {id: 'media-player-name', name: 'Media Player Name', type: 'select-item', help: 'Name of the media player object.'} :
-                { id: 'media-player-id', name: 'Media Player ID', type: 'input', help: 'ID of the media player object.'},
+                this.getComponentField(obj, 'media-button', 'select-name') == true ? {id: 'media-player-name', name: 'Media Player Name', type: 'select-item', help: 'Name of the media player object. Leaving this blank will default button to nearest media player (within 20 metres).'} :
+                { id: 'media-player-id', name: 'Media Player ID', type: 'input', help: 'ID of the media player object.Leaving this blank will default button to nearest media player (within 20 metres).'},
                 { id: 'media-source-id', name: 'Media Source URL', type: 'input', help:'URL for the media source you wish to play with this button.'},
                 { id: 'who-can-click', name: 'Who Can Press?', type: 'select', default: 'Everyone', values: ['Everyone', 'Admin Only'], help: 'Type of user who is allowed to click on the media button. Default is Everyone.' },
             ]
