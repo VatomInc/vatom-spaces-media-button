@@ -54,7 +54,7 @@ class MediaButton extends BaseComponent{
         // If no player ID specified attempt to find nearest one
         if(!mediaPlayerID){
             let button = await this.plugin.objects.get(this.objectID)
-            let nearbyObjects = await this.plugin.objects.fetchInRadius(button.x, button.y, 15)
+            let nearbyObjects = await this.plugin.objects.fetchInRadius(button.x, button.y, 20)
             let foundDistance = 0
             let mediaPlayer = null
             for(let object of nearbyObjects){
