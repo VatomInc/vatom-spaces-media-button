@@ -1,0 +1,14 @@
+{
+  "id": "media-button",
+  "name": "Media Button",
+  "version": "1.0.0",
+  "beta": true,
+  "description": "Allows the creation of media buttons that will quickly change the source of a media player",
+  "longDescription": "This plugin provides the ability to quickly change the media source of an in world media player via clicking on an in world object. This is achieved through two components. One that will convert a plane into a media player and another that will convert an object to a button that can change the media source for the aforementioned media player.",
+  "configuration": "Create a plane and add the media player component to an object. Create any number of additional objects (they can be anything) and add the media button component to them. Add the required media source to each media button object. Clicking on those buttons should now play that media source on the media player object.",
+  "category": "Social & Communication",
+  "businessId": "ym3t3mPi0g",
+  "price": 0,
+  "releaseNotes": "Plugin Creation",
+  "entrypoint": ""
+}
