@@ -13,6 +13,11 @@ This plugin is designed to be used from within [Vatom Spaces](https://vatom.com)
 
 > **Note:** You can only sideload plugins in a space you are the owner of.
 
+## Running locally
+- Start the dev server: `npm start`
+- Load the plugin in your space. Select Plugins, press the (+) icon and then paste the address: [http://localhost:9000/plugin.js](http://localhost:9000/plugin.js)
+- After making code changes, refresh the page
+
 ## Use
 
 - Install plugin

@@ -28,6 +28,7 @@ export default class MediaButtonPlugin extends BasePlugin {
                 { id: 'media-player-id', name: 'Media Player ID', type: 'input', help: 'ID of the media player object.Leaving this blank will default button to nearest media player (within 20 metres).'},
                 { id: 'media-source-id', name: 'Media Source URL', type: 'input', help:'URL for the media source you wish to play with this button.'},
                 { id: 'who-can-click', name: 'Who Can Press?', type: 'select', default: 'Everyone', values: ['Everyone', 'Admin Only'], help: 'Type of user who is allowed to click on the media button. Default is Everyone.' },
+                { id: 'event-name', name: 'Event Name', type: 'text', help: 'If set, this button will record analytics events for the attached video using the given event name' },
             ]
         })
 
@@ -86,6 +87,7 @@ class MediaButton extends BaseComponent{
     
                     // Set media source
                     ['component:media-playback:media-source:src']: mediaSourceID,
+                    ['component:media-playback:media-source:event-name']: this.getField('event-name') || '',
     
                     // Sync command: Play immediately from the beginning
                     public: {
